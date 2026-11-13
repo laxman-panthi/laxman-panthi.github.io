@@ -77,44 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Email Copy-to-Clipboard with Feedback
-  const copyBtn = document.getElementById('copy-email-btn');
-  const copyText = document.getElementById('copy-text');
-  const emailAddressElem = document.getElementById('email-address');
-
-  if (copyBtn && copyText && emailAddressElem) {
-    copyBtn.addEventListener('click', async () => {
-      const email = emailAddressElem.textContent.trim();
-      try {
-        await navigator.clipboard.writeText(email);
-        const originalText = copyText.textContent;
-        copyText.textContent = 'Copied!';
-        copyBtn.style.borderColor = 'var(--accent-emerald)';
-        copyBtn.style.color = 'var(--accent-emerald)';
-
-        setTimeout(() => {
-          copyText.textContent = originalText;
-          copyBtn.style.borderColor = '';
-          copyBtn.style.color = '';
-        }, 2000);
-      } catch (err) {
-        // Fallback for non-secure contexts
-        const textarea = document.createElement('textarea');
-        textarea.value = email;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-
-        copyText.textContent = 'Copied!';
-        setTimeout(() => {
-          copyText.textContent = 'Copy';
-        }, 2000);
-      }
-    });
-  }
-
-  // 5. Active Navigation Link Highlighting on Scroll
+  // 4. Active Navigation Link Highlighting on Scroll
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
 
