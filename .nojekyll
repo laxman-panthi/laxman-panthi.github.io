@@ -1,0 +1,2 @@
+# GitHub Pages .nojekyll flag
+# Prevents Jekyll from ignoring files with underscores and allows direct static asset serving
