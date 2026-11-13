@@ -2,18 +2,19 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Laxman Panthi | Senior Data Scientist & AI/ML Architect</title>
   
-  <meta name="description" content="Senior Data Scientist and AI/ML Architect specializing in production Generative AI, resilient multi-agent RAG pipelines, real-time streaming, and enterprise MLOps.">
-  <meta name="keywords" content="Laxman Panthi, Data Scientist, AI Architect, Generative AI, RAG, Multi-Agent Systems, Spark Streaming, Databricks, MLOps">
+  <meta name="description" content="Senior Data Scientist and AI/ML Architect with a decade of experience deploying production-grade predictive and Generative AI systems, automated fraud mitigation, and real-time streaming architectures.">
+  <meta name="keywords" content="Laxman Panthi, Senior Data Scientist, AI/ML Architect, Generative AI, RAG, Multi-Agent Systems, Databricks, PySpark, MLOps">
   <meta name="author" content="Laxman Panthi">
+  <meta name="theme-color" content="#090d16">
   
-  <!-- Open Graph / Social Media Meta Tags -->
+  <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://laxman-panthi.github.io/">
   <meta property="og:title" content="Laxman Panthi | Senior Data Scientist & AI/ML Architect">
-  <meta property="og:description" content="Architecting enterprise Generative AI systems, resilient multi-agent RAG workflows, and high-throughput real-time streaming pipelines.">
+  <meta property="og:description" content="Senior Data Scientist and AI/ML Architect with a decade of experience deploying production-grade predictive and Generative AI systems.">
   <meta property="og:image" content="https://laxman-panthi.github.io/og-preview.png">
   <meta name="twitter:card" content="summary_large_image">
   
@@ -28,21 +29,21 @@
   <!-- Navigation Header -->
   <header class="header">
     <div class="nav-container">
-      <a href="#hero" class="brand">
+      <a href="#hero" class="brand" aria-label="Laxman Panthi Home">
         <span class="brand-bracket">&lt;</span>LP <span class="brand-highlight">/&gt;</span>
       </a>
 
-      <nav class="nav-links" id="nav-menu">
+      <nav class="nav-links" id="nav-menu" aria-label="Main Navigation">
         <a href="#about" class="nav-link">About</a>
-        <a href="#architecture" class="nav-link">Architecture</a>
-        <a href="#projects" class="nav-link">Systems</a>
-        <a href="#stack" class="nav-link">Tech Stack</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
       <div class="header-actions">
         <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light mode" title="Toggle Theme">
-          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -53,22 +54,32 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
 
-        <a href="https://github.com/laxman-panthi" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub Profile">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <a href="https://linkedin.com/in/laxmanpanthi" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+
+        <a href="https://github.com/laxman-panthi" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub Profile" title="GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
             <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
           </svg>
         </a>
 
-        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Open menu">
-          <span></span><span></span><span></span>
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar bar-top"></span>
+          <span class="bar bar-mid"></span>
+          <span class="bar bar-bot"></span>
         </button>
       </div>
     </div>
+    <!-- Mobile backdrop -->
+    <div id="mobile-backdrop" class="mobile-backdrop" aria-hidden="true"></div>
   </header>
 
   <main>
@@ -78,393 +89,437 @@
         <div class="hero-content">
           <div class="status-pill">
             <span class="status-dot"></span>
-            <span>Senior AI/ML Architect &bull; Production GenAI Systems</span>
+            <span>Senior Data Scientist | AI/ML Architect</span>
           </div>
 
           <h1 class="hero-title">
-            Engineering scalable <span class="gradient-text">Generative AI</span>, real-time streaming, and autonomous agents.
+            Laxman Panthi
           </h1>
-
-          <p class="hero-description">
-            I am <strong>Laxman Panthi</strong>, an AI/ML Architect with a decade of enterprise experience deploying mission-critical systems. At Constellation Energy, I design enterprise sales intelligence platforms, automated real-time fraud mitigation architectures, and resilient multi-agent RAG pipelines.
+          <p class="hero-subtitle gradient-text">
+            Senior Data Scientist &bull; AI/ML Architect
           </p>
 
+          <p class="hero-description">
+            A decade of experience deploying production-grade predictive and Generative AI systems. Proven track record driving <strong>$1M+ in cost savings</strong> through automated fraud mitigation and accelerating revenue growth via intelligent enterprise sales platforms.
+          </p>
+
+          <!-- Professional Profiles Direct Access -->
+          <div class="quick-contact-row font-mono">
+            <a href="https://linkedin.com/in/laxmanpanthi" target="_blank" rel="noopener noreferrer" class="quick-contact-item" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>linkedin.com/in/laxmanpanthi</span>
+            </a>
+            <a href="https://github.com/laxman-panthi" target="_blank" rel="noopener noreferrer" class="quick-contact-item" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>github.com/laxman-panthi</span>
+            </a>
+          </div>
+
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">
-              <span>Explore Systems</span>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <a href="#experience" class="btn btn-primary">
+              <span>View Experience</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
             <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-            <a href="https://github.com/laxman-panthi" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-              <span>GitHub</span>
+            <a href="https://linkedin.com/in/laxmanpanthi" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <span>LinkedIn Profile</span>
             </a>
           </div>
 
-          <div class="metrics-row">
+          <!-- Factual Resume Metrics -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <span class="metric-value">$1M+</span>
+              <span class="metric-label">Annual Savings Generated via Automated Fraud Detection</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">75%</span>
+              <span class="metric-label">Reduction in Manual Audit Volume via ML-Based Scoring</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">1TB+</span>
+              <span class="metric-label">Daily Clinical Data Ingested at 99.9% Reliability</span>
+            </div>
             <div class="metric-card">
               <span class="metric-value">10+</span>
-              <span class="metric-label">Years Enterprise AI/ML</span>
-            </div>
-            <div class="metric-card">
-              <span class="metric-value">&lt;50ms</span>
-              <span class="metric-label">Inference & Streaming Latency</span>
-            </div>
-            <div class="metric-card">
-              <span class="metric-value">Millions</span>
-              <span class="metric-label">Real-time Events Processed/Day</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Terminal Architecture Card -->
-        <div class="hero-visual">
-          <div class="terminal-card">
-            <div class="terminal-header">
-              <div class="terminal-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <span class="terminal-title">pipeline_orchestrator.py</span>
-              <span class="terminal-badge">LIVE TRACE</span>
-            </div>
-            <div class="terminal-body font-mono">
-              <div class="code-line"><span class="c-dim">01</span> <span class="c-keyword">import</span> <span class="c-mod">spark_streaming</span>, <span class="c-mod">agent_mesh</span>, <span class="c-mod">rag_engine</span></div>
-              <div class="code-line"><span class="c-dim">02</span> </div>
-              <div class="code-line"><span class="c-dim">03</span> <span class="c-comment"># Ingest enterprise event stream</span></div>
-              <div class="code-line"><span class="c-dim">04</span> stream = AzureEventHubs.<span class="c-fn">read_stream</span>(partition_key=<span class="c-str">"tx_hash"</span>)</div>
-              <div class="code-line"><span class="c-dim">05</span> </div>
-              <div class="code-line"><span class="c-dim">06</span> <span class="c-comment"># Distributed inference & anomaly scoring</span></div>
-              <div class="code-line"><span class="c-dim">07</span> anomalies = stream.<span class="c-fn">apply_model</span>(XGBoostInference(drift_bound=<span class="c-num">0.02</span>))</div>
-              <div class="code-line"><span class="c-dim">08</span> </div>
-              <div class="code-line"><span class="c-dim">09</span> <span class="c-comment"># Autonomous multi-agent verification</span></div>
-              <div class="code-line"><span class="c-dim">10</span> <span class="c-keyword">with</span> agent_mesh.<span class="c-fn">supervisor</span>(concurrency=<span class="c-str">"distributed"</span>) <span class="c-keyword">as</span> mesh:</div>
-              <div class="code-line"><span class="c-dim">11</span> &nbsp;&nbsp;verified = mesh.<span class="c-fn">evaluate</span>(anomalies, tools=[<span class="c-str">"Text2SQL"</span>, <span class="c-str">"VectorRAG"</span>])</div>
-              <div class="code-line"><span class="c-dim">12</span> </div>
-              <div class="code-line"><span class="c-dim">13</span> <span class="c-comment">&gt;&gt;&gt; DeltaLake Sync: 100% committed | Latency: 18.4ms</span></div>
-              <div class="code-line"><span class="c-dim">14</span> <span class="c-prompt">&gt;</span> <span class="c-success">Pipeline healthy. Zero drift detected.</span><span class="blinking-cursor">_</span></div>
+              <span class="metric-label">Years of Enterprise AI/ML &amp; Production Architecture</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Architecture Pillars -->
-    <section id="architecture" class="section">
+    <!-- Professional Experience Section -->
+    <section id="experience" class="section">
       <div class="section-container">
         <div class="section-header">
-          <span class="section-badge">CORE CAPABILITIES</span>
-          <h2 class="section-title">Architectural Pillars</h2>
-          <p class="section-subtitle">Battle-tested design patterns engineered for low latency, zero downtime, and massive enterprise throughput.</p>
+          <span class="section-badge">CAREER TRACK RECORD</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">Production deployments and quantifiable enterprise impact across energy, healthcare, and distributed systems.</p>
         </div>
 
-        <div class="grid grid-cols-2">
-          <div class="feature-card">
-            <div class="feature-icon bg-blue">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
+        <div class="timeline">
+          <!-- Role 1: Constellation Energy -->
+          <article class="timeline-card">
+            <div class="card-header-group">
+              <div class="card-title-meta">
+                <span class="company-badge">Energy Sector</span>
+                <h3 class="role-title">Senior Data Scientist</h3>
+                <h4 class="company-name">Constellation Energy <span class="contract-tag">(Contractor via Kforce)</span></h4>
+              </div>
+              <div class="card-time-badge font-mono">
+                April 2026 – Present
+              </div>
             </div>
-            <h3 class="feature-title">Generative AI & Multi-Agent Systems</h3>
-            <p class="feature-desc">
-              Designing production RAG systems with dense vector retrieval, hybrid sparse-dense ranking, and autonomous agent loops. Production Text2SQL with AST validation prevents schema hallucination and arbitrary queries.
-            </p>
-            <ul class="feature-tags">
-              <li>RAG Architecture</li>
-              <li>Multi-Agent Mesh</li>
-              <li>Text2SQL</li>
-              <li>Semantic Caching</li>
-            </ul>
-          </div>
 
-          <div class="feature-card">
-            <div class="feature-icon bg-emerald">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-              </svg>
-            </div>
-            <h3 class="feature-title">Real-Time Streaming & Big Data</h3>
-            <p class="feature-desc">
-              High-velocity event ingestion and distributed processing using Azure Event Hubs and Spark Structured Streaming. Seamless integration with Delta Lake ensuring ACID transactions across millions of events daily.
-            </p>
-            <ul class="feature-tags">
-              <li>Apache Spark</li>
-              <li>Delta Lake</li>
-              <li>Azure Event Hubs</li>
-              <li>Sub-Second Scoring</li>
+            <ul class="resume-bullet-list">
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Architected predictive scoring models within the <strong>"Modern Sales Platform"</strong> for gas and power commodities, directly influencing BDM pipeline prioritization and revenue growth.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Engineered high-signal features from customer usage and market volatility data, driving measurable increases in model precision and lead conversion rates.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Partnered with Product Analysts to iterate on feedback loops, aligning predictive insights with BDM workflows and business-defined sales targets.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Collaborated on scaling the sales platform architecture, focusing on model latency reduction and data throughput to support enterprise-wide adoption.</span>
+              </li>
             </ul>
-          </div>
 
-          <div class="feature-card">
-            <div class="feature-icon bg-purple">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                <line x1="15" y1="9" x2="15.01" y2="9"></line>
-              </svg>
+            <div class="tech-pills-row">
+              <span class="tech-pill">Predictive Scoring</span>
+              <span class="tech-pill">Commodity Markets</span>
+              <span class="tech-pill">Feature Engineering</span>
+              <span class="tech-pill">Modern Sales Platform</span>
+              <span class="tech-pill">Latency Optimization</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">SQL</span>
             </div>
-            <h3 class="feature-title">Predictive ML & Fraud Defense</h3>
-            <p class="feature-desc">
-              Developing high-precision ensemble classifiers (XGBoost, gradient boosting), statistical time-series forecasting, and automated anomaly detection to mitigate financial and transactional fraud.
-            </p>
-            <ul class="feature-tags">
-              <li>XGBoost</li>
-              <li>Time Series</li>
-              <li>Anomaly Detection</li>
-              <li>Statistical Testing</li>
-            </ul>
-          </div>
+          </article>
 
-          <div class="feature-card">
-            <div class="feature-icon bg-amber">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
+          <!-- Role 2: Medical Mutual of Ohio (Senior Data Scientist) -->
+          <article class="timeline-card">
+            <div class="card-header-group">
+              <div class="card-title-meta">
+                <span class="company-badge">Healthcare Analytics & MLOps</span>
+                <h3 class="role-title">Senior Data Scientist</h3>
+                <h4 class="company-name">Medical Mutual of Ohio</h4>
+              </div>
+              <div class="card-time-badge font-mono">
+                October 2021 – April 2026
+              </div>
             </div>
-            <h3 class="feature-title">Enterprise MLOps & Production Platforms</h3>
-            <p class="feature-desc">
-              End-to-end model lifecycle management via Databricks and MLflow. Robust automated CI/CD deployment pipelines, containerized serving, and data drift detection using Population Stability Index (PSI).
-            </p>
-            <ul class="feature-tags">
-              <li>Databricks</li>
-              <li>MLflow Registry</li>
-              <li>Docker & CI/CD</li>
-              <li>Model Monitoring</li>
+
+            <ul class="resume-bullet-list">
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Built a production-grade MLOps ecosystem on <strong>Databricks</strong> for duplicate claims detection, generating <strong>$1M+ in annual savings</strong> through automated fraud and error mitigation while reducing feature complexity from 56 to 14.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Modernized post-paid claims review via ML-based scoring, reducing manual audit volume by <strong>75%</strong> while implementing automated monitoring for concept and data drift.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Engineered a <strong>HIPAA-compliant RAG framework</strong> and document pipeline to enable real-time, intelligent retrieval of clinical healthcare documentation.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Optimized LLM development cycles using <strong>Databricks Agentbricks</strong>, reducing deployment complexity and improving model accuracy through automated evaluation pipelines.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Automated full-lifecycle MLOps using <strong>Databricks Asset Bundles</strong> and <strong>Azure DevOps</strong>, accelerating deployment speed from weeks to hours for 10+ data applications.</span>
+              </li>
             </ul>
-          </div>
+
+            <div class="tech-pills-row">
+              <span class="tech-pill">Databricks</span>
+              <span class="tech-pill">MLOps</span>
+              <span class="tech-pill">Fraud Mitigation ($1M+)</span>
+              <span class="tech-pill">HIPAA-Compliant RAG</span>
+              <span class="tech-pill">Databricks Agentbricks</span>
+              <span class="tech-pill">Azure DevOps</span>
+              <span class="tech-pill">Drift Monitoring</span>
+              <span class="tech-pill">Asset Bundles</span>
+            </div>
+          </article>
+
+          <!-- Role 3: Medical Mutual of Ohio (Senior Data Engineer / Analytics Engineer) -->
+          <article class="timeline-card">
+            <div class="card-header-group">
+              <div class="card-title-meta">
+                <span class="company-badge">Big Data Pipelines & Distributed Systems</span>
+                <h3 class="role-title">Senior Data Engineer / Analytics Engineer</h3>
+                <h4 class="company-name">Medical Mutual of Ohio</h4>
+              </div>
+              <div class="card-time-badge font-mono">
+                July 2017 – September 2021
+              </div>
+            </div>
+
+            <ul class="resume-bullet-list">
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Architected distributed EHR and clinical data ingestion pipelines using <strong>PySpark and Scala</strong>, processing <strong>1TB+ daily clinical data</strong> with 99.9% reliability.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Optimized Spark jobs and Scala-based transformations, achieving <strong>3x performance improvement</strong> through intelligent partitioning and broadcast joins in Delta tables.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Automated build, release, and deployment processes for healthcare data domains, significantly reducing manual effort and ensuring process accuracy.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Built interactive <strong>R/Shiny dashboards</strong> enabling actionable insights for stakeholders across membership, product, and clinical data domains.</span>
+              </li>
+            </ul>
+
+            <div class="tech-pills-row">
+              <span class="tech-pill">PySpark</span>
+              <span class="tech-pill">Scala</span>
+              <span class="tech-pill">1TB+ Ingestion</span>
+              <span class="tech-pill">Delta Lake</span>
+              <span class="tech-pill">Broadcast Joins</span>
+              <span class="tech-pill">Partition Optimization</span>
+              <span class="tech-pill">R / Shiny</span>
+              <span class="tech-pill">CI/CD Pipelines</span>
+            </div>
+          </article>
+
+          <!-- Role 4: Kent State University -->
+          <article class="timeline-card">
+            <div class="card-header-group">
+              <div class="card-title-meta">
+                <span class="company-badge">Academic Research</span>
+                <h3 class="role-title">Research Assistant</h3>
+                <h4 class="company-name">Kent State University</h4>
+              </div>
+              <div class="card-time-badge font-mono">
+                August 2015 – May 2017
+              </div>
+            </div>
+
+            <ul class="resume-bullet-list">
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Researched and edited books, contributed to research articles on business innovation and technology, and assisted in Ph.D. level course material.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">&bull;</span>
+                <span>Developed a student-alumni matching algorithm using <strong>Python</strong> for the Executive MBA program.</span>
+              </li>
+            </ul>
+
+            <div class="tech-pills-row">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Matching Algorithm</span>
+              <span class="tech-pill">Academic Research</span>
+              <span class="tech-pill">Executive MBA</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Featured Systems & Case Studies -->
-    <section id="projects" class="section section-alt">
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section section-alt">
       <div class="section-container">
         <div class="section-header">
-          <span class="section-badge">PRODUCTION IMPACT</span>
-          <h2 class="section-title">Featured Production Systems</h2>
-          <p class="section-subtitle">Real-world implementations delivering commercial impact, high availability, and operational resilience.</p>
+          <span class="section-badge">TECHNICAL EXPERTISE</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Categorized competencies directly from verified production experience.</p>
         </div>
 
-        <div class="projects-list">
-          <!-- System 1 -->
-          <div class="project-item">
-            <div class="project-header">
-              <div class="project-title-group">
-                <span class="project-num">SYSTEM // 01</span>
-                <h3 class="project-name">Enterprise B2B Sales Intelligence & Multi-Agent Copilot</h3>
+        <div class="skills-grid">
+          <!-- Category 1: Machine Learning & AI -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper bg-blue">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
               </div>
-              <span class="system-status">ACTIVE IN PRODUCTION</span>
+              <h3 class="skill-category-name">Machine Learning &amp; AI</h3>
             </div>
-            <p class="project-summary">
-              Architected a multi-agent orchestration framework for enterprise energy sales teams. Combines real-time contractual knowledge retrieval (RAG) with governed Text2SQL querying across high-volume transaction databases. Reduces contract pricing turnaround from days to seconds while eliminating hallucinated tariff calculations.
-            </p>
-            <div class="architecture-specs font-mono">
-              <div class="spec-col"><span>INGESTION:</span> Vector DB + Hybrid Search</div>
-              <div class="spec-col"><span>REASONING:</span> LangChain Multi-Agent Mesh</div>
-              <div class="spec-col"><span>GUARDRAIL:</span> SQL AST Parser & Strict Schema</div>
-            </div>
-            <div class="project-footer">
-              <div class="tags-row">
-                <span class="tag">RAG</span>
-                <span class="tag">Multi-Agent</span>
-                <span class="tag">Text2SQL</span>
-                <span class="tag">Databricks</span>
-                <span class="tag">FastAPI</span>
-              </div>
+            <div class="skill-items-list">
+              <span class="skill-badge">Predictive Analytics</span>
+              <span class="skill-badge">Ensemble Methods (XGBoost)</span>
+              <span class="skill-badge">NLP (BERT)</span>
+              <span class="skill-badge">Feature Engineering</span>
+              <span class="skill-badge">Statistical Modeling</span>
+              <span class="skill-badge">Time Series Analysis</span>
             </div>
           </div>
 
-          <!-- System 2 -->
-          <div class="project-item">
-            <div class="project-header">
-              <div class="project-title-group">
-                <span class="project-num">SYSTEM // 02</span>
-                <h3 class="project-name">High-Velocity Real-Time Fraud Mitigation Engine</h3>
+          <!-- Category 2: Generative AI & LLMs -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper bg-emerald">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
               </div>
-              <span class="system-status">ACTIVE IN PRODUCTION</span>
+              <h3 class="skill-category-name">Generative AI &amp; LLMs</h3>
             </div>
-            <p class="project-summary">
-              Engineered an event-driven streaming pipeline processing millions of daily metering and billing transactions. Employs PySpark Structured Streaming on Azure Event Hubs with an optimized ensemble ML model to detect consumption anomalies and billing fraud within milliseconds.
-            </p>
-            <div class="architecture-specs font-mono">
-              <div class="spec-col"><span>STREAMING:</span> Azure Event Hubs</div>
-              <div class="spec-col"><span>COMPUTE:</span> Spark Structured Streaming</div>
-              <div class="spec-col"><span>STORAGE:</span> Delta Lake ACID Tables</div>
-            </div>
-            <div class="project-footer">
-              <div class="tags-row">
-                <span class="tag">Apache Spark</span>
-                <span class="tag">Delta Lake</span>
-                <span class="tag">Event Hubs</span>
-                <span class="tag">XGBoost</span>
-                <span class="tag">PySpark</span>
-              </div>
+            <div class="skill-items-list">
+              <span class="skill-badge">RAG Architecture</span>
+              <span class="skill-badge">Multi-Agent Systems</span>
+              <span class="skill-badge">Text2SQL</span>
+              <span class="skill-badge">Vector Stores (ADA-002, FAISS)</span>
+              <span class="skill-badge">LangChain</span>
+              <span class="skill-badge">Prompt Engineering (DSPy)</span>
+              <span class="skill-badge">LLM Evaluation (RAGAS)</span>
             </div>
           </div>
 
-          <!-- System 3 -->
-          <div class="project-item">
-            <div class="project-header">
-              <div class="project-title-group">
-                <span class="project-num">SYSTEM // 03</span>
-                <h3 class="project-name">Autonomous Workflow Automation & DevTools Platform</h3>
+          <!-- Category 3: MLOps & Production -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper bg-purple">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
               </div>
-              <span class="system-status">DEV TOOLS & SAAS</span>
+              <h3 class="skill-category-name">MLOps &amp; Production</h3>
             </div>
-            <p class="project-summary">
-              Designed self-sustaining agentic microservices that detect high-friction developer and business bottlenecks. Automatically performs multi-step code translation, documentation synthesis, and automated data quality validation with strict execution boundaries and verifiable test harnesses.
-            </p>
-            <div class="architecture-specs font-mono">
-              <div class="spec-col"><span>ARCHITECTURE:</span> Lightweight Edge / Serverless</div>
-              <div class="spec-col"><span>AGENT ENGINE:</span> Autonomous Tool Execution</div>
-              <div class="spec-col"><span>MONITORING:</span> Self-Healing Error Handlers</div>
+            <div class="skill-items-list">
+              <span class="skill-badge">MLflow</span>
+              <span class="skill-badge">Databricks Intelligence Platform</span>
+              <span class="skill-badge">Azure DevOps</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">CI/CD</span>
+              <span class="skill-badge">Model Monitoring</span>
+              <span class="skill-badge">A/B Testing</span>
             </div>
-            <div class="project-footer">
-              <div class="tags-row">
-                <span class="tag">Agentic AI</span>
-                <span class="tag">DevTools</span>
-                <span class="tag">SaaS Architecture</span>
-                <span class="tag">Python</span>
-                <span class="tag">Docker</span>
+          </div>
+
+          <!-- Category 4: Programming & Big Data -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper bg-amber">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
               </div>
+              <h3 class="skill-category-name">Programming &amp; Big Data</h3>
+            </div>
+            <div class="skill-items-list">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">Scala</span>
+              <span class="skill-badge">PyTorch</span>
+              <span class="skill-badge">Apache Spark</span>
+              <span class="skill-badge">Delta Lake</span>
+              <span class="skill-badge">Azure Event Hubs</span>
+              <span class="skill-badge">Structured Streaming</span>
+              <span class="skill-badge">R</span>
+              <span class="skill-badge">React.js</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Tech Stack Matrix -->
-    <section id="stack" class="section">
+    <!-- Education Section -->
+    <section id="education" class="section">
       <div class="section-container">
         <div class="section-header">
-          <span class="section-badge">TOOLING & TECHNOLOGIES</span>
-          <h2 class="section-title">Technical Matrix</h2>
-          <p class="section-subtitle">Technologies and frameworks employed across production deployments.</p>
+          <span class="section-badge">ACADEMIC FOUNDATION</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Degrees in Machine Learning, Analytics, Information Systems, and Finance.</p>
         </div>
 
-        <!-- Filter Controls -->
-        <div class="filter-bar" id="stack-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="genai">Generative AI</button>
-          <button class="filter-btn" data-filter="streaming">Big Data & Streaming</button>
-          <button class="filter-btn" data-filter="ml">Machine Learning</button>
-          <button class="filter-btn" data-filter="mlops">MLOps & Cloud</button>
-        </div>
-
-        <div class="stack-grid" id="stack-container">
-          <!-- GenAI -->
-          <div class="stack-card" data-category="genai">
-            <div class="stack-category">GenAI & LLMs</div>
-            <h4 class="stack-name">RAG & Vector Retrieval</h4>
-            <p class="stack-desc">Dense embedding retrieval, re-ranking models, hybrid lexical-dense search, and semantic caches.</p>
-          </div>
-          <div class="stack-card" data-category="genai">
-            <div class="stack-category">GenAI & LLMs</div>
-            <h4 class="stack-name">Multi-Agent Orchestration</h4>
-            <p class="stack-desc">Hierarchical agent supervisors, deterministic tool dispatch, state persistence, and self-reflection loops.</p>
-          </div>
-          <div class="stack-card" data-category="genai">
-            <div class="stack-category">GenAI & LLMs</div>
-            <h4 class="stack-name">Text2SQL & Guardrails</h4>
-            <p class="stack-desc">Natural language to SQL compilation with AST syntax tree validation and schema permission filters.</p>
+        <div class="education-grid">
+          <!-- Degree 1 -->
+          <div class="education-card">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h3 class="edu-degree">Master of Business Administration (MBA)</h3>
+            <p class="edu-specialization">Information Systems</p>
+            <p class="edu-institution">Kent State University</p>
           </div>
 
-          <!-- Streaming -->
-          <div class="stack-card" data-category="streaming">
-            <div class="stack-category">Big Data & Streaming</div>
-            <h4 class="stack-name">Apache Spark & PySpark</h4>
-            <p class="stack-desc">Distributed computing, memory-optimized partition tuning, Structured Streaming, and Spark SQL.</p>
-          </div>
-          <div class="stack-card" data-category="streaming">
-            <div class="stack-category">Big Data & Streaming</div>
-            <h4 class="stack-name">Delta Lake & Lakehouse</h4>
-            <p class="stack-desc">ACID transaction logs, time travel, schema enforcement, and compaction optimization for lakehouse storage.</p>
-          </div>
-          <div class="stack-card" data-category="streaming">
-            <div class="stack-category">Big Data & Streaming</div>
-            <h4 class="stack-name">Azure Event Hubs & Kafka</h4>
-            <p class="stack-desc">High-throughput ingestion streams, partition key balancing, exactly-once semantics, and backpressure tuning.</p>
+          <!-- Degree 2 -->
+          <div class="education-card">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h3 class="edu-degree">Master of Science (MS) in Analytics</h3>
+            <p class="edu-specialization">Machine Learning</p>
+            <p class="edu-institution">Harrisburg University of Science and Technology</p>
           </div>
 
-          <!-- ML -->
-          <div class="stack-card" data-category="ml">
-            <div class="stack-category">Machine Learning</div>
-            <h4 class="stack-name">XGBoost & LightGBM</h4>
-            <p class="stack-desc">Gradient boosted trees for high-dimensional tabular classification, fraud detection, and regression.</p>
-          </div>
-          <div class="stack-card" data-category="ml">
-            <div class="stack-category">Machine Learning</div>
-            <h4 class="stack-name">PyTorch & Transformers</h4>
-            <p class="stack-desc">Deep neural networks, domain-adapted embedding models, token classification, and sequence modeling.</p>
-          </div>
-          <div class="stack-card" data-category="ml">
-            <div class="stack-category">Machine Learning</div>
-            <h4 class="stack-name">Time Series & Statistical Inference</h4>
-            <p class="stack-desc">ARIMA, Prophet, hierarchical demand forecasting, hypothesis testing, and Bayesian optimization.</p>
-          </div>
-
-          <!-- MLOps -->
-          <div class="stack-card" data-category="mlops">
-            <div class="stack-category">MLOps & Cloud</div>
-            <h4 class="stack-name">Databricks Intelligence Platform</h4>
-            <p class="stack-desc">Unified analytics workspace, serverless compute, Unity Catalog data governance, and automated jobs.</p>
-          </div>
-          <div class="stack-card" data-category="mlops">
-            <div class="stack-category">MLOps & Cloud</div>
-            <h4 class="stack-name">MLflow Registry & Tracking</h4>
-            <p class="stack-desc">Experiment tracking, model versioning, automated staging-to-prod promotion, and metric logging.</p>
-          </div>
-          <div class="stack-card" data-category="mlops">
-            <div class="stack-category">MLOps & Cloud</div>
-            <h4 class="stack-name">Docker & Azure DevOps CI/CD</h4>
-            <p class="stack-desc">Containerization, reproducible build environments, automated integration testing, and blue-green releases.</p>
+          <!-- Degree 3 -->
+          <div class="education-card">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h3 class="edu-degree">Bachelor of Business Administration (BBA)</h3>
+            <p class="edu-specialization">Finance &amp; Economics</p>
+            <p class="edu-institution">University of Pune</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About & Engineering Philosophy -->
+    <!-- Professional Summary & About Section -->
     <section id="about" class="section section-alt">
       <div class="section-container">
         <div class="about-grid">
           <div class="about-text">
-            <span class="section-badge">ABOUT ME</span>
-            <h2 class="section-title">Decade of Enterprise AI Leadership</h2>
+            <span class="section-badge">PROFESSIONAL SUMMARY</span>
+            <h2 class="section-title">About Laxman Panthi</h2>
             <p class="about-lead">
-              I am Laxman Panthi, a Senior Data Scientist and AI/ML Architect with ten years of continuous experience building and scaling production machine learning and Generative AI systems.
+              Senior Data Scientist and AI/ML Architect with a decade of experience deploying production-grade predictive and Generative AI systems.
             </p>
             <p>
-              My work centers on solving complex enterprise problems in the energy and modern sales sectors. I specialize in designing architectures that bridge cutting-edge AI research with resilient production infrastructure—ensuring models run with deterministic guardrails, zero drift, and measurable business ROI.
+              Proven track record of driving significant cost savings through automated fraud mitigation and accelerating revenue growth via intelligent sales platforms. Expert in architecting end-to-end RAG systems, multi-agent workflows, and real-time streaming pipelines.
             </p>
             <p>
-              In parallel, I am passionate about <strong>autonomous workflow automation</strong> and designing lightweight SaaS dev tools that liberate engineering teams from high-friction tasks through agentic intelligence.
+              Strategic partner to business stakeholders, bridging the gap between complex AI/ML research and scalable enterprise execution.
             </p>
 
-            <div class="about-highlights">
-              <div class="highlight-item">
-                <span class="highlight-bullet">&#9670;</span>
-                <div>
-                  <strong>Enterprise Scale:</strong> Designed systems powering critical decisions across multi-million dollar sales pipelines.
-                </div>
+            <div class="about-key-stats">
+              <div class="key-stat-item">
+                <span class="stat-highlight">United States</span>
+                <span class="stat-label">Location</span>
               </div>
-              <div class="highlight-item">
-                <span class="highlight-bullet">&#9670;</span>
-                <div>
-                  <strong>Lean Architecture:</strong> Championing low-cost serverless patterns, efficient vector retrieval, and minimal maintenance overhead.
-                </div>
+              <div class="key-stat-item">
+                <span class="stat-highlight">10+ Years</span>
+                <span class="stat-label">Production AI/ML</span>
               </div>
-              <div class="highlight-item">
-                <span class="highlight-bullet">&#9670;</span>
-                <div>
-                  <strong>Deterministic Reliability:</strong> Strict AST validation, schema guardrails, and real-time distribution drift sentinels.
-                </div>
+              <div class="key-stat-item">
+                <span class="stat-highlight">Enterprise</span>
+                <span class="stat-label">Healthcare &amp; Energy</span>
               </div>
             </div>
           </div>
@@ -475,26 +530,31 @@
                 <span class="avatar-initials">LP</span>
               </div>
               <h3 class="profile-name">Laxman Panthi</h3>
-              <p class="profile-role">Senior Data Scientist & AI/ML Architect</p>
+              <p class="profile-role">Senior Data Scientist | AI/ML Architect</p>
+              
               <div class="profile-meta">
-                <div class="meta-row">
-                  <span class="meta-label">Current Role:</span>
-                  <span class="meta-val">Constellation Energy</span>
-                </div>
-                <div class="meta-row">
-                  <span class="meta-label">Domain:</span>
-                  <span class="meta-val">Enterprise AI, Streaming, MLOps</span>
-                </div>
-                <div class="meta-row">
-                  <span class="meta-label">Languages:</span>
-                  <span class="meta-val">Python, SQL, Scala, Bash</span>
-                </div>
                 <div class="meta-row">
                   <span class="meta-label">Location:</span>
                   <span class="meta-val">United States</span>
                 </div>
+                <div class="meta-row">
+                  <span class="meta-label">Current:</span>
+                  <span class="meta-val">Constellation Energy</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Previous:</span>
+                  <span class="meta-val">Medical Mutual of Ohio</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Focus:</span>
+                  <span class="meta-val">GenAI, RAG, Streaming, MLOps</span>
+                </div>
               </div>
-              <a href="#contact" class="btn btn-primary btn-block">Connect Directly</a>
+
+              <div class="profile-card-actions">
+                <a href="#contact" class="btn btn-primary btn-block">Get in Touch</a>
+                <a href="https://linkedin.com/in/laxmanpanthi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">LinkedIn Profile</a>
+              </div>
             </div>
           </div>
         </div>
@@ -506,44 +566,57 @@
       <div class="section-container">
         <div class="contact-card">
           <div class="contact-header">
-            <span class="section-badge">INITIATE CONTACT</span>
-            <h2 class="section-title">Let's Discuss Architecture & AI Initiatives</h2>
+            <span class="section-badge">CONNECT</span>
+            <h2 class="section-title">Connect &amp; Collaborate</h2>
             <p class="contact-subtitle">
-              Whether you are architecting a multi-agent enterprise platform, seeking advisory on high-throughput streaming systems, or exploring automated SaaS collaborations.
+              Reach out via LinkedIn or explore technical repositories on GitHub for AI/ML architecture discussions, enterprise consulting, or leadership opportunities.
             </p>
           </div>
 
           <div class="contact-methods">
+            <!-- LinkedIn -->
             <div class="method-box">
-              <div class="method-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
+              <div class="method-icon-title">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="method-label">LinkedIn</span>
+                  <div class="method-val">linkedin.com/in/laxmanpanthi</div>
+                </div>
               </div>
-              <div class="method-info">
-                <span class="method-label">Professional Network</span>
-                <span class="method-val">linkedin.com/in/laxman-panthi</span>
+              <div class="method-actions">
+                <a href="https://linkedin.com/in/laxmanpanthi" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Connect on LinkedIn</a>
               </div>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost">Connect</a>
             </div>
 
+            <!-- GitHub -->
             <div class="method-box">
-              <div class="method-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
+              <div class="method-icon-title">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="method-label">GitHub</span>
+                  <div class="method-val">github.com/laxman-panthi</div>
+                </div>
               </div>
-              <div class="method-info">
-                <span class="method-label">Code Repositories</span>
-                <span class="method-val">github.com/laxman-panthi</span>
+              <div class="method-actions">
+                <a href="https://github.com/laxman-panthi" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View GitHub Profile</a>
               </div>
-              <a href="https://github.com/laxman-panthi" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost">View Profile</a>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -553,9 +626,13 @@
         <span class="footer-text">&copy; 2026 Laxman Panthi. All rights reserved.</span>
       </div>
       <div class="footer-right">
-        <span class="deployment-status">
-          <span class="status-dot"></span> Hosted on GitHub Pages &bull; laxman-panthi.github.io
-        </span>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

@@ -1,5 +1,6 @@
 /**
  * Laxman Panthi Portfolio - Interactive Runtime Script
+ * Mobile-first interactions, theme switching, and clipboard helpers
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
   const htmlRoot = document.documentElement;
 
-  // Initialize theme from localStorage or system preference
   const savedTheme = localStorage.getItem('theme');
   const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
@@ -28,52 +28,102 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Mobile Menu Toggle
+  // 2. Mobile Menu Management
   const mobileToggle = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
+  const mobileBackdrop = document.getElementById('mobile-backdrop');
 
-  if (mobileToggle && navMenu) {
+  function openMobileMenu() {
+    if (!navMenu || !mobileToggle) return;
+    mobileToggle.classList.add('active');
+    mobileToggle.setAttribute('aria-expanded', 'true');
+    navMenu.classList.add('open');
+    if (mobileBackdrop) mobileBackdrop.classList.add('open');
+    document.body.classList.add('menu-locked');
+  }
+
+  function closeMobileMenu() {
+    if (!navMenu || !mobileToggle) return;
+    mobileToggle.classList.remove('active');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    navMenu.classList.remove('open');
+    if (mobileBackdrop) mobileBackdrop.classList.remove('open');
+    document.body.classList.remove('menu-locked');
+  }
+
+  if (mobileToggle) {
     mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-    });
-
-    // Close menu when clicking any nav link
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-      });
+      const isOpen = navMenu && navMenu.classList.contains('open');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
   }
 
-  // 3. Technical Matrix Category Filtering
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const stackCards = document.querySelectorAll('.stack-card');
+  if (mobileBackdrop) {
+    mobileBackdrop.addEventListener('click', closeMobileMenu);
+  }
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Toggle active button style
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+  // Close menu when clicking any nav link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
 
-      const filterCategory = button.getAttribute('data-filter');
+  // Close menu with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileMenu();
+    }
+  });
 
-      // Filter cards with smooth opacity transition
-      stackCards.forEach(card => {
-        const cardCategory = card.getAttribute('data-category');
-        if (filterCategory === 'all' || cardCategory === filterCategory) {
-          card.style.display = 'block';
-          requestAnimationFrame(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          });
+  // Close menu on resize above mobile breakpoint
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 860) {
+      closeMobileMenu();
+    }
+  });
+
+  // 3. Toast & Copy to Clipboard
+  const toastEl = document.getElementById('toast');
+  let toastTimeout = null;
+
+  function showToast(message) {
+    if (!toastEl) return;
+    toastEl.textContent = message;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => {
+      toastEl.classList.remove('show');
+    }, 2500);
+  }
+
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const textToCopy = btn.getAttribute('data-copy');
+      if (!textToCopy) return;
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(textToCopy);
         } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 150);
+          // Fallback for non-secure contexts or unsupported environments
+          const textArea = document.createElement('textarea');
+          textArea.value = textToCopy;
+          textArea.style.position = 'fixed';
+          textArea.style.left = '-999999px';
+          textArea.style.top = '-999999px';
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
         }
-      });
+        showToast(`Copied to clipboard: ${textToCopy}`);
+      } catch (err) {
+        showToast(`Failed to copy: ${textToCopy}`);
+      }
     });
   });
 
@@ -83,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const observerOptions = {
     root: null,
-    rootMargin: '-30% 0px -70% 0px',
+    rootMargin: '-25% 0px -65% 0px',
     threshold: 0
   };
 
@@ -93,9 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const activeId = entry.target.getAttribute('id');
         navLinks.forEach(link => {
           if (link.getAttribute('href') === `#${activeId}`) {
-            link.style.color = 'var(--accent-primary)';
+            link.classList.add('active-nav');
           } else {
-            link.style.color = '';
+            link.classList.remove('active-nav');
           }
         });
       }
